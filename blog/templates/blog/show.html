@@ -5,11 +5,13 @@
       <h1 class="blog-title">
         {{ post.title }}
       </h1>
-      <p class="blog-post-meta">meta</p>
     </div>
     <div class="row">
       <div class="col-sm-8 blog-main">
-        <p>{{ post.body }}</p>
+        <div class="blog-post">
+          <p class="blog-post-meta">by {{ post.author.get_full_name }}</p>
+          <p>{{ post.body }}</p>
+        </div>
       </div>
     </div>
   </div>
