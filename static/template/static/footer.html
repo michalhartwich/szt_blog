@@ -1,0 +1,16 @@
+<div class='blog-footer'>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <p>Menu</p>
+        <ul>
+          {% for item in pages %}
+            <li><a href="{% url 'pages:show' item.slug %}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+  </div>
+</div>

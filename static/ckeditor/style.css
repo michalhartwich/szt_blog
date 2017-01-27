@@ -1,0 +1,21 @@
+.cover-image {
+  height: 500px;
+  margin-top: -20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-image h1 {
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+}
+
+.cover-image .blog-post-meta {
+  color: white;
+  text-align: center;
+}
+
+.blog-footer {
+  text-align: left;
+}
