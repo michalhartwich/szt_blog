@@ -11,6 +11,7 @@ class Post(models.Model):
     body = RichTextField()
     pub_date = models.DateTimeField('date published')
     author = models.ForeignKey(User)
+    image = models.ImageField(blank=True, upload_to='./static/uploads')
 
     def __str__(self):
         return self.title
